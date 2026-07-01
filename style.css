@@ -22,11 +22,13 @@ form input[type="text"]{
     background:transparent;
     border-radius:5px 0 0 5px;
     border:none;
-    box-shadow:2px 2px 4px rgba(10, 7, 0, 0.5);
-    text-shadow:2px 2px 2px black;
+    box-shadow:2px 2px 4px rgba(10, 7, 0, 1);
+    text-shadow:3px 2px 0px black;
+    font-weight:bold
 }
 form input[type=submit]{
     font-size:20px;
+    font-weight:bold;
     padding:10px;
     border-radius:0 5px 5px 0;
     outline:none;
