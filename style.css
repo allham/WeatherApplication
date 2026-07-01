@@ -1,10 +1,121 @@
-.container{
+
+body{
     position:relative;
+    margin:0;
+    background:slategray;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    max-width:600px;
+    text-align:center;
+    background:linear-gradient(120deg,slateblue,seagreen);
+    margin:50px;
+    padding:20px;
+    font-weight:bold;
     width:80%;
-    height:80vh;
+    border-radius:10px;
+    text-shadow:2px 2px 3px rgba(255, 255, 255, 0.5);
+}
+form input[type="text"]{
+    padding:10px;
+    font-size:20px;
+    background:transparent;
+    border-radius:5px 0 0 5px;
+    border:none;
+    box-shadow:2px 2px 4px rgba(10, 7, 0, 0.5);
+    text-shadow:2px 2px 2px black;
+}
+form input[type=submit]{
+    font-size:20px;
+    padding:10px;
+    border-radius:0 5px 5px 0;
+    outline:none;
+    border:none;
+    box-shadow:2px 2px 4px rgba(10, 7, 0, 0.5);
+    cursor:pointer;
+    background:transparent;
+}
+form input[type="submit"]:hover{
+    background:black;
+    color:white;
+}
+.icon{
+    padding:10px;
+}
+.icon img{
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    width:80px;
+    height:80px;
+}
+.temperature{
+    font-size:32px;
+}
+.description{
+    font-size:22px;
+    font-weight:bold;
+    padding:10px 0;
+    margin-bottom:20px;
+}
+.details{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:60px;
+    flex-wrap:wrap;
+}
+.details > div{
+    border:solid 1px black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:45px;
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    border:none;
+    box-shadow:2px 3px 2px rgba(0, 7, 10, 0.5);
 }
 p{
     position:absolute;
-    bottom:20px;
-    right:20px;
+    bottom:-55px;
+    right:40px;
+    color:rgba(0, 7, 10, 0.5);
+}
+p span{
+    color:lightgray;
+}
+@media (max-width:500px){
+    form{
+        flex-direction:clumn;
+    }
+    form input[type="text"]{
+
+        width:80%;
+        margin-bottom:20px;
+    }
+    form input[type="submit"]{
+        margin-top:10px;
+    }
+    .container{
+        min-height:700px;
+        text-align:center;
+    }
+    p{
+        position:absolute;
+        bottom:10px;
+        right:45px;
+    }
+    .details{
+        justify-content:end;
+    }
+    .details > div{
+        margin-right:20px;
+    }
+    body{
+        position:relative;
+        display:flex;
+    }
 }
