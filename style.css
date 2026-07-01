@@ -74,8 +74,8 @@ form input[type="submit"]:hover{
     justify-content:center;
     align-items:center;
     min-height:45px;
-    padding:10px;
-    margin:10px;
+    padding:10px auto;
+    margin:10px auto;
     border-radius:5px;
     border:none;
     box-shadow:2px 3px 2px rgba(0, 7, 10, 0.5);
